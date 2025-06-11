@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --laranja: #F0B35B;
+    --azul-escuro: #0D121E;
+    --azul-mais-escuro: #080B16;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* === HEADER === */
+
+.header {
+    background-color: #04050C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+#logo {
+    margin: 11px 32px 11px 27px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header button {
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 34px;
+    padding: 0.625rem 1.25rem;
+}
+
+.button-laranja {
+    background-color: var(--laranja);
+    color: #000;
+    cursor: pointer;
+}
+
+.button-laranja:hover {
+    opacity: .9;
+}
+
+.button-laranja:active {
+    opacity: .8;
+}
+
+/* === SCHEDULER === */
+
+.scheduler {
+    position: relative;
+    height: 100vh;
+}
+
+.mask {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/Rectangle\ 6.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.scheduler-img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.schedule-figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.schedule-figure h1,
+.schedule-figure h2 {
+    color: white;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.schedule-figure h1 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.schedule-figure h2 {
+    font-weight: inherit;
+    margin-bottom: 24px;
+}
+
+.schedule-figure button {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 1rem 3rem;
+}
+
+/* === ABOUT === */
+
+.about-section {
+    background-color: var(--azul-escuro);
+    width: 100%;
+    padding: 8rem 55px 0;
+    min-height: 70vh;
+    display: flex;
+    gap: 20px;
+}
+
+.about-section_img {
+    min-width: 50vw;
+    position: relative;
+}
+
+.about-section_img img {
+    position: absolute;
+}
+
+.about-section_img img:nth-child(1) {
+    top: -50px;
+    left: 110px;
+    z-index: 2;
+}
+
+.about-section_img img:nth-child(2) {
+    top: 200px;
+    left: 380px;
+}
+
+.about-section_img img:nth-child(3) {
+    top: 270px;
+}
+
+.about-section_sobre {
+    width: 50vw;
+}
+
+.about-section_sobre h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.about-section_sobre p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.about-section_sobre h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* === SERVICES === */
+
+.services-section {
+    width: auto;
+    height: 90vh;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section h1 {
+    font-size: 40px;
+    color: var(--azul-escuro);
+}
+
+.services-section_p {
+    font-size: 16px;
+    margin: 14px auto 48px;
+}
+
+.services-section-box {
+    display: flex;
+    gap: 26px;
+}
+
+.services-section-box_container {
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 0 0 8px 8px;
+}
+
+.services-section-box_container img {
+    display: block;
+}
+
+#services-box-3 {
+    width: 356px;
+    height: 320px;
+}
+
+.services-section-box_container div {
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 0 0 8px 8px;
+}
+
+.services-section-box_price {
+    color: white;
+    background-color: var(--azul-mais-escuro);
+    border-radius: 8px;
+    padding: 3px 8px;
+}
+
+/* === TEAM === */
+
+.team-section {
+    background-color: var(--azul-mais-escuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.team-section-box {
+    display: flex;
+    gap: 26px;
+}
+
+.vertical-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    /* texto de baixo para cima */
+    font-size: 2.5rem;
+    color: #646464;
+}
+
+.team-grid {
+    position: relative;
+}
+
+.team-grid p {
+    color: var(--laranja);
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+/* === BRANCHES === */
+
+.branches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.branches h1 {
+    color: var(--azul-escuro);
+    font-size: 40px;
+    margin-bottom: 44px;
+}
+
+.our-locations {
+    display: flex;
+    gap: 44px;
+    position: relative;
+}
+
+.our-locations-box {
+    width: 230px;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 8px;
+    border: 1px solid #666666;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(50%);
+}
+
+.our-locations-box h4 {
+    color: white;
+    font-weight: bold;
+}
+
+.our-locations-box p {
+    color: white;
+}
+
+/* === FOOTER === */
+
+.footer {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.button-whatssap {
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+}
+
+#creditos {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+}
+
+@media screen and (max-width: 81.25em) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 55px;
+    }
+
+    .about-section_img {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #paragrafo-2 {
+        display: none;
+    }
+
+    .about-section_img img {
+        position: static;
+    }
+
+    .about-section_img img:nth-child(2) {
+        width: 289px;
+        height: 333px;
+    }
+
+    .about-section_img img:nth-child(3) {
+        display: none;
+    }
+
+    .services-section {
+        height: initial;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .services-section_p {
+        margin: 14px auto 48px;
+    }
+
+    .services-section-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #services-box-3 {
+        width: 356px;
+        height: 320px;
+    }
+
+    .team-section {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .vertical-title {
+        writing-mode: initial;
+        transform: initial;
+    }
+
+    .services-box {
+        display: flex;
+    }
+
+    .team-section-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .branches {
+        height: initial;
+    }
+
+    .our-locations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #our-locations-box-1 {
+        position: relative;
+        transform: translateX(50%);
+        bottom: 100px;
+    }
+
+    .logo-blue {
+        margin-top: 50px;
+        width: 140px;
+    }
+
+    .button-whatssap {
+        width: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .header-nav {
+        display: none;
+    }
+
+    #button-header {
+        display: initial;
+    }
+
+    .button-whatssap {
+        width: 15px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
+    .button-whatssap img {
+        width: 60px;
+    }
+}
