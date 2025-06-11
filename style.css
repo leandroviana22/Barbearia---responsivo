@@ -57,11 +57,11 @@ body {
 }
 
 .button-laranja:hover {
-    opacity: .9;
+    opacity: 0.9;
 }
 
 .button-laranja:active {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 /* === SCHEDULER === */
