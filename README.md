@@ -1,29 +1,53 @@
-💈 Barber - Site de Barbearia
-Este é um site fictício de uma barbearia, criado com foco em design moderno, responsividade e facilidade de navegação. O projeto simula um site real com seções informativas e botão de agendamento.
+# Barbearia - Responsivo 💈
 
-🧾 Funcionalidades
-Página inicial com imagem de destaque
+Site fictício de uma barbearia, desenvolvido com foco em responsividade e organização de layout usando HTML5 e CSS3.  
+O projeto simula a apresentação de uma barbearia moderna, com seções como agendamento, equipe, serviços e unidades.
 
-Informações sobre a barbearia
+---
 
-Lista de serviços oferecidos
+## 🔗 Acesse o site online
+https://leandroviana22.github.io/Barbearia---responsivo/
 
-Botão de agendamento
+---
 
-Design responsivo (PC e celular)
-
-💻 Tecnologias utilizadas
-HTML5
-
-CSS3
-
-JavaScript (opcional se houver interações)
-
-📷 Preview
+## 🖥️ Demonstração do projeto
 
 [[https://github.com/user-attachments/assets/f298dff9-fe96-4cdb-b7c5-53d762846978](https://github.com/user-attachments/assets/f298dff9-fe96-4cdb-b7c5-53d762846978](https://github.com/user-attachments/assets/f298dff9-fe96-4cdb-b7c5-53d762846978)
 
-[https://github.com/user-attachments/assets/d1c930f9-104e-4a6a-a03a-ae6a1f0ffcd2)](https://github.com/user-attachments/assets/d1c930f9-104e-4a6a-a03a-ae6a1f0ffcd2)
 
-📌 Objetivo
-Este projeto foi desenvolvido para praticar habilidades de front-end, com foco em HTML e CSS, aplicando conceitos de layout, responsividade e navegação.
+---
+
+## 🛠️ Tecnologias utilizadas
+- HTML5  
+- CSS3  
+  - Media Queries (responsividade)
+
+---
+
+## 📱 Responsividade
+
+Este projeto foi totalmente estruturado com **media queries**, garantindo uma boa visualização em celulares, tablets e computadores.  
+Para testar, acesse o site e redimensione a janela do navegador ou utilize um dispositivo móvel.
+
+---
+
+## 📌 Objetivo
+
+Esse projeto foi criado como prática de desenvolvimento front-end, com foco em:
+- Estruturação semântica com HTML
+- Estilização com CSS
+- Responsividade com media queries
+- Apresentação de conteúdo com design limpo
+
+---
+
+## ✂️ Seções do site
+- **Header** com logo e menu fixo
+- **Agendamento**
+- **Sobre a barbearia**
+- **Serviços**
+- **Equipe**
+- **Unidades**
+- **Rodapé com informações de contato**
+
+---
